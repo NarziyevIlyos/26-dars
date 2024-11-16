@@ -1,0 +1,75 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.contents {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+.container {
+}
+.contents__wrapper {
+//   border: 1px solid white;
+  margin: 50px auto 0px;
+  width: 80.74%;
+}
+.contents__title {
+  text-align: center;
+}
+.contents__desc {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.contents__cards-wrapper {
+  margin-top: 46.26px;
+  display: flex;
+  gap: 33px;
+
+  .card {
+    width: 48.32%;
+    border-radius: 10px;
+    padding: 40px 35.44px;
+    background: #ffffff;
+    box-shadow: 0px 4px 31px 0px #00000026;
+  }
+  .card__header {
+    width: 60.5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__header-title {
+    @include card-title-text;
+    padding: 10px;
+  }
+  .card__header-desc {
+    margin-top: 10px;
+    @include text;
+    color: $second-text;
+    padding: 10px;
+  }
+  .card__header-btn {
+    margin-top: 57px;
+    background-color: $bg-blue;
+    box-shadow: 0px 4px 31px 0px #00000026;
+    padding: 13.5px 46px;
+    font-size: 17px;
+  }
+  .card__body {
+    width: 85.11%;
+    margin: 57px auto 0px;
+  }
+
+  .card-2 {
+    .card__header-btn {
+      margin-top: 30px;
+    }
+    .card__body {
+      margin: 3px auto 0px;
+    }
+  }
+}

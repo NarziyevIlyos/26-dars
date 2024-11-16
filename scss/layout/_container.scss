@@ -1,0 +1,16 @@
+.container {
+	width: 1220px;
+	margin: 0 auto;
+	// border: 1px solid white;
+	background-color: $body;
+}
+
+@include mobile() {
+	.container {
+		width: 100%;
+		min-width: 320px;
+        max-width: 571px;
+        padding: 0 16px;
+    }
+}
+

@@ -1,0 +1,78 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.features {
+  margin-top: 162px;
+  padding-bottom: 116px;
+}
+.container {
+}
+.features__info-wrapper {
+  width: 49.34%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.features__info-title {
+  text-align: center;
+}
+.features__info-desc {
+  margin-top: 27px;
+}
+.features__control-panel {
+  width: 89.18%;
+  margin: 80px auto 0px;
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  box-shadow: 0px 4px 31px 0px #00000026;
+
+}
+.features__control-panel-img {
+  position: relative;
+}
+
+.features__control-panel-img::after {
+  content: url(../../assets/pictures/features__Line-Chart\ 1.png);
+  position: absolute;
+  bottom: -66px;
+  right: -32px;
+}
+.features__control-panel-cards {
+  width: 28.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .card {
+    width: 87.06%;
+  }
+  .card__header {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+  }
+  .card__header-icon {
+  }
+  .card__header-title {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    //   line-height: 30px;
+    letter-spacing: 0.1px;
+    color: $text;
+  }
+  .card__body {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .card__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  
+}

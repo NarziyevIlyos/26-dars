@@ -1,0 +1,40 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.header {
+}
+.nav {
+    padding: 30px 100px;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav__btn {
+        padding: 13.5px 46px;
+    }
+}
+.nav__logo img {
+
+}
+.nav__logo-img {
+}
+.nav__links {
+   
+    display: flex;
+    align-items: center;
+    // gap: 4.18%;
+    gap: 51px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.nav__links-link {
+    // padding: ;
+}
+
+.btn {
+}

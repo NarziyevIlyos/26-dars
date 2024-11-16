@@ -1,0 +1,53 @@
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.gallery {
+    margin-top: 100px;
+}
+.container {
+}
+.gallery__wrapper {
+    width: 89.1%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .gallery__btn {
+        margin: 44px auto 0px;
+        padding: 13.5px 40px;
+    }
+}
+.gallery__title {
+    text-align: center;
+    padding: 10px;
+}
+.gallery__desc {
+    width: 54.37%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.gallery__cards-wrapper {
+    margin-top: 44px;
+    // border: 1px solid red;
+}
+.gallery__cards-wrapper__row-1,
+.gallery__cards-wrapper__row-2  {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+.gallery__cards-wrapper__row-1 {
+    width: 91.9%;
+    margin: 0 auto;
+}
+.gallery__cards-wrapper__row-1__img-1 {
+}
+.gallery__cards-wrapper__row-2__img-1 {
+}
+
+.btn {
+}

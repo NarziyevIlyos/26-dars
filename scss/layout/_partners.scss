@@ -1,0 +1,39 @@
+
+@use "../variables/colors";
+@use "../components/buttons";
+@use "../mixins/mobile";
+@use "../mixins/text";
+
+.partners {
+    margin-top: 100px;
+    padding: 50px 0px;
+}
+.container {
+}
+.partners__wrapper {
+    margin: 0 auto;
+    width: 68.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partners__title {
+    padding: 10px;
+}
+.partners__desc {
+    width: 71.03%;
+    padding: 10px;
+}
+.partners__icons-wrapper {
+    margin-top: 50px;
+    display: flex;
+    gap: 74px;
+}
+.partners__icon {
+    
+}
+
+.partners__btn {
+    margin-top: 50px;
+    padding: 13.5px 40px;
+}
